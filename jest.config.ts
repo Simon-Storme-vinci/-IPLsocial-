@@ -1,11 +1,8 @@
-{
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "rootDir": "src",
-    "outDir": "dist",
-    "esModuleInterop": true,
-    "strict": true
-  },
-  "include": ["src/**/*.ts"], // ensure to include only files in src
-}
+export default {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  testMatch: ['**/__tests__/**/*.ts', '**/?(*.)+(spec|test).ts'],
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov', 'html'],
+  collectCoverageFrom: ['src/**/*.ts'],
+};
