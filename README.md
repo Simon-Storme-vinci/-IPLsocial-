@@ -11,4 +11,4 @@ le fichier yml permet l'execution du pipeline quand il y a un pull ou un pull_re
 sur la branche main. Il permet de lancer les tests pour verifier que tout est ok et avant tout ça il 
 il installe les dépendance et clone le repo sur la machine pour la préparation 
 
-npm test permet de lancer les tests
+npm run test : permet de lancer les tests
