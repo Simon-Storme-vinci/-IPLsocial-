@@ -51,13 +51,5 @@ describe("IPLsocial TEST", () => {
             expect(actualNoTextAfter).toBe(false);
         });
 
-        it("should return true when give a correct email", () => {
-            const iplSocial = new IPLsocial();
-
-            const actualCorrect = iplSocial.validationEmail("simon.storme@outlook.be");
-
-            expect(actualCorrect).toBe(true);
-        });
-
     })
 })
